@@ -62,80 +62,79 @@
           "tool": "CASAVA suite",
           "step_order": "1",
           "version": "1.8",
-          "packages": [null],
-          "parametric_domain": {
-            "Varaint calling": "variantsNoCovCutoff"
-          }
+          "packages": [null]
+         
         },
         {
           "id": "obj.0016",
           "tool": "NextGENe",
           "step_order": "1",
-          "version": "2.0",
-          "parametric_domain": {
-            "reads": "single-end read analysis",
-            "Seed bases": "15 base seeds",
-            "move step bases": "15 base seeds",
-            "maching base percentage": "≥70",
-            "detect large indels option ": "On",
-            "mutation percentage": "≥10"
-          }
+          "version": "2.0"
+                    
         },
         {
           "id": "obj.0016",
           "tool": "CNVSeq",
           "step_order": "2",
-          "version": "null",
-          "parametric_domain": {
-            "window size": "500bp",
-            "Data filtration with log2 ratio for duplication": "≥0.4",
-            "Data filtration with log2 ratio for deletion": "≥-0.5"
-          }
+          "version": "null"
+            
+          
         },
         {
           "id": "obj.0017",
           "tool": "SAMtools",
           "step_order": "2",
-          "version": "null",
-          "parametric_domain": "null"
-        },
+          "version": "null"
+                  },
         {
           "id": "obj.0017",
           "tool": "Alamut HT",
           "step_order": "2",
-          "version": "null",
-          "parametric_domain": "null"
-        }
+          "version": "null"
+          }
       ]
     }
   ],
+       "parametric_domain": {
+       "Varaint calling": "variantsNoCovCutoff", 
+       "reads": "single-end read analysis",
+       "Seed bases": "15 base seeds",
+       "move step bases": "15 base seeds",
+       "maching base percentage": "≥70",
+       "detect large indels option ": "On",
+       "mutation percentage": "≥10",
+       "window size": "500bp",
+       "Data filtration with log2 ratio for duplication": "≥0.4",
+       "Data filtration with log2 ratio for deletion": "≥-0.5"
+    }, 
   "io_domain": {
     "step_1": {
       "output_uri_list": [
-        "http://ncbi.gov/NC0001",
-        " http://ncbi.gov/NC0001"
+        ".txt",
+        " .pjt"
       ],
       "reference_uri_list": [
-        "http://ncbi.gov/NC0001",
-        " http://ncbi.gov/NC0001"
+        "null"
       ],
       "input_uri_list": [
-        "http://ncbi.gov/NC0001",
-        " http://ncbi.gov/NC0001"
+        ".fastq",
+        ".fastq"
       ]
     },
     "step_2": {
       "output_uri_list": [
-        "http://ncbi.gov/NC0001",
-        " http://ncbi.gov/NC0001"
+        ".xls",
+        ".xls",
+        ".xls"
       ],
       "reference_uri_list": [
-        "http://ncbi.gov/NC0001",
-        " http://ncbi.gov/NC0001"
+        "null",
+        "null"
       ],
       "input_uri_list": [
-        "http://ncbi.gov/NC0001",
-        "http://ncbi.gov/NC0001"
+        ".bam",
+        ".bam",
+        ".vcf"
       ]
     }
   },
